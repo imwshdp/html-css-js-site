@@ -1,0 +1,105 @@
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<link rel = "shortcut icon" href = "content/icons/solar-system.png" type = "image/x-icon">
+		<title>our partners</title>
+
+		<style>
+
+			body {
+
+				background: rgba(0,0,0, 1);
+
+				display: flex;
+				flex-direction: column;
+
+				width: 100%;
+				height: 100%;
+				
+				box-sizing: border-box;
+				margin: 0;
+				
+				font-family: Courier New;
+				color: rgba(0,0,0, 0.6);
+				font-size: 3vw;
+				text-shadow: white 0.5px 0.5px 1px;
+
+			}
+
+			.partner {
+
+				display: flex;
+				flex-direction: row;
+
+				height: 33%;
+				width: 100%;
+
+				align-self: center;
+				align-items: center;
+
+				text-align: left;
+				text-indent: 15px;
+
+			}
+
+			.partner_icon {
+
+				background: 100% 100% no-repeat;
+				background-position: center;
+				background-size: contain;
+
+				height: 50%;
+				width: 30%;
+
+				margin-left: 30%;
+
+			}
+
+			a {
+
+				color: rgba(0,0,0, 0.6);
+
+				text-decoration: none;
+				text-shadow: white 0.5px 0.5px 1px;	
+
+			}
+
+			#s, #j, #n {
+
+				transition: all 1s ease-in-out;
+
+			}
+
+			#s:hover, #j:hover, #n:hover {
+
+				opacity: 50%;
+				transition: opacity 1s ease-in-out;
+
+			}
+
+		</style>
+
+	</head>
+
+	<body>	
+
+		<div class = "partner" id = "s">
+			<a href = "https://www.spacex.com" class = "partner_icon" style = "background-image: url(content/icons/partners/spacex.png);"></a>
+			<a href = "https://www.spacex.com">space x</a>
+		</div>
+
+		<div class = "partner" id = "j">
+			<a href = "https://global.jaxa.jp" class = "partner_icon" style = "background-image: url(content/icons/partners/jaxa.png);"></a>
+			<a href = "https://global.jaxa.jp">jaxa</a>
+		</div>
+
+		<div class = "partner" id = "n">
+			<a href = "https://www.nasa.gov" class = "partner_icon" style = "background-image: url(content/icons/partners/nasa.png);"></a>
+			<a href = "https://www.nasa.gov">nasa</a>
+		</div>
+
+	</body>
+
+</html>

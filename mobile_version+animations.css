@@ -1,0 +1,156 @@
+/* mobile format */
+
+@media only screen and (max-width: 1000px) {
+
+	.header_menu_botton {
+
+		font-size: 70%;
+
+	}
+
+	main {
+
+		background: linear-gradient(to right, rgba(0,0,0, 0.1) 0%, rgba(0,0,0, 0.4) 10%, rgba(0,0,0, 0.6) 20% 80%, rgba(0,0,0, 0.4) 90%, rgba(0,0,0, 0.1) 100%);
+
+	}
+
+	#main_text_div {
+
+		width: 60%;
+		margin-left: 20%;
+		font-size: 70%;
+
+	}
+
+}
+
+@media only screen and (max-width: 1000px) and (min-height: 512px) {
+
+	header {
+
+		max-height: 5%;
+
+	}
+
+	.header_menu_botton {
+
+		height: 30%;
+		font-size: 70%;
+
+	}
+
+	main {
+
+		height: 80%;
+
+	}
+
+	#main_text_div {
+
+		height: 90%;
+		top: 5%;
+		font-size: 70%;
+
+	}
+
+	footer {
+
+		max-height: 15%;
+
+	}
+
+	form {
+
+		height: 40%;
+
+	}
+
+}
+
+
+
+/* animations */
+
+@keyframes window_appearance {
+    
+    0% { transform: translateY(-200%); }
+    70% { transform: translateY(10%); }
+  	100% { transform: translateY(0%); }
+
+}
+
+@keyframes window_appearance_opacity {
+    
+    0% { opacity: 0; }
+    20% { opacity: 0.1; }
+    70% { opacity: 0.3; }
+  	100% { opacity: 0.9; }
+
+}
+
+@keyframes window_hiding {
+    
+    0% { transform: translateY(0%); }
+    30% { transform: translateY(10%); }
+  	100% { transform: translateY(-200%); }
+
+}
+
+@keyframes window_hiding_opacity {
+    
+    0% { opacity: 0.9; }
+    30% { opacity: 0.3; }
+    80% { opacity: 0.1; }
+  	100% { opacity: 0; }
+
+}
+
+@keyframes astronaut_hover {
+    
+	0% { transform: rotate(0deg); }
+
+	100% { transform: rotate(360deg); }
+
+}
+
+@keyframes icon_hover {
+    
+    0% { transform: scale(1.0); }
+    50% { transform: scale(1.1); }
+  	100% { transform: scale(1.0); }
+
+}
+
+@keyframes background_fade {
+
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+
+}
+
+@keyframes background_fade_2 {
+
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+
+}
+
+@keyframes info_window_appearance_opacity {
+    
+    0% { opacity: 0; }
+    20% { opacity: 0.1; }
+    70% { opacity: 0.3; }
+  	100% { opacity: 1; }
+
+}
+
+@keyframes info_window_hiding_opacity {
+    
+    0% { opacity: 1; }
+    20% { opacity: 0.9; }
+    70% { opacity: 0.7; }
+  	100% { opacity: 0; }
+
+}

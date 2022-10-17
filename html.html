@@ -1,0 +1,178 @@
+<!DOCTYPE HTML5>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<link rel = "stylesheet" href = "main_style.css">
+		<link rel = "stylesheet" href = "forms+windows.css">
+		<link rel = "stylesheet" href = "mobile_version+animations.css">
+
+		<link rel = "shortcut icon" href = "content/icons/solar-system.png" type = "image/x-icon">
+
+		<title>spaceastro.com</title>
+
+	</head>
+
+	<body>
+
+		<div id = "background"></div>
+
+		<script src = "scripts/windows_scripts.js"></script>
+
+		<header>
+			
+			<div class = "header_logo" title = "she's looking forward to a bright future."></div>
+
+			<div class = "header_menu">
+
+				<div class = "header_menu_button">
+					<button id = "about_us_b" onclick = "pop_up_window('about_us')">about us</button>
+				</div>
+
+				<div class = "header_menu_button">
+					<button id = "projects_b" onclick = "pop_up_window('projects')">projects</button>
+				</div>
+
+				<div class = "header_menu_button">
+					<button id = "follow_b" onclick = "pop_up_window('follow')">follow</button>
+				</div>
+
+				<div class = "header_menu_button">
+					<button id = "store_b" onclick = "pop_up_window('store')">store</button>
+				</div>
+
+			</div>
+
+		</header>
+
+		<main id = "main">
+
+			
+
+			<script src = "scripts/links.js"></script>
+			<script src = "scripts/text_content.js"></script>
+			<script src = "scripts/forms_position.js"></script>
+
+			<div class = "popup_window" id = "about_us_ppw">
+				<img src = "content/icons/about.png">
+				<a onclick = "content_handler('about')">about</a>
+				<a onclick = "content_handler('aims_and_proposals')">aims and proposals</a>
+				<a onclick = "show('partners.html')">our partners</a>
+				<a onclick = "content_handler('history')">history</a>
+			</div>
+
+			<div class = "popup_window" id = "projects_ppw">
+				<img src = "content/icons/research.png">
+				<a onclick = "content_handler('space_adventures')">space adventures</a>
+				<a onclick = "open_info_window('moon_travels')">moon travels</a>
+				<a onclick = "open_info_window('venus_projects')">venus projects</a>
+			</div>
+
+			<div class = "popup_window" id = "follow_ppw">
+				<img src = "content/icons/astronaut.png" id = "astronaut_icon">
+				<a onclick = "open_form('donate_form')">support project</a>
+				<a onclick = "show('networks.html')">social networks</a>
+			</div>
+
+			<div class = "popup_window" id = "store_ppw">
+				<img src = "content/icons/earth.png">
+				<a onclick = "open_form('join_form')">join a project</a>
+				<a href = "https://shop.spacex.com">stuff</a>
+			</div>
+
+
+
+			<div class = "ref_info" id = "moon_travels">
+				<h2>"moonlight" program</h2>
+				<p>
+					take part in a 3-week moon tour that includes
+					<ul>
+						<li>an unforgettable and comfortable trip on the "Apollo" ship</li>
+						<li>historical guides to the moon craters</li>
+						<li>a long program of relaxation in the moon sea</li>
+						<li>moon baths</li>
+					</ul>
+					<button id = "moon_travels_b">check program</button>
+				</p>
+			</div>
+
+			<div class = "ref_info" id = "venus_projects">
+				<h2>project "venus"</h2>
+				<p>
+					hot two-month tours to venus, guaranteeing you:
+					<ul>
+						<li>the best beaches on the planet</li>
+						<li>a magical adventure in the most amazing sunny areas</li>
+						<li>all active leisure and sports</li>
+						<li>wonderful bright mood both on the tour and during the trip!</li>
+					</ul>
+					<button id = "venus_projects_b">check program</button>
+				</p>
+			</div>
+
+
+
+			<form id = "donate_form" method = "post">
+				
+				<div class = "cancel" onclick = "close_form('donate_form')"></div>
+
+				<label for = "number">card number</label>
+				<input type = "text" id = "number" name = "number" placeholder = "xxxx xxxx xxxx xxxx"><br>
+
+				<label for = "year">month/year</label>
+				<input type = "text" id = "year" name = "year" placeholder = "xx/xx"><br>
+
+				<label for = "cvv">cvv code</label>
+				<input type = "text" id = "cvv" name = "cvv" placeholder = "xxx"><br>
+
+				<label for = "cvv">donation amount</label>
+				<input type = "text" id = "sum" name = "sum" placeholder = "donation amount"><br><br>
+
+				<input type = "submit" value = "submit donation" onclick = "alert('thank you for your donation');">
+
+			</form>
+
+			<form id = "join_form" method = "post">
+				
+				<div class = "cancel" onclick = "close_form('join_form')"></div>
+					
+				<label for = "number">your mail</label>
+				<input type = "text" id = "mail" name = "mail" placeholder = "some_astro@gmail.com"><br>
+
+				<label for = "tour">choose tour</label>
+				<select id = "tour" name = "tour">
+					<option value = "moon">project "moon"</option>
+					<option value = "moon">express project "moon"</option>
+					<option value = "venus">project "venus"</option>
+					<option value = "moon">express project "venus"</option>
+				</select><br>
+
+				<label for = "cvv">leave a comment</label>
+				<input type = "textarea" id = "comment" name = "comment" placeholder = "your comment"><br><br>
+
+				<input type = "submit" value = "submit registration" onclick = "alert('thank you for choosing our project!\ncheck your mail for further actions');">
+
+			</form>
+
+
+
+			<div id = "main_text_div">
+			</div>
+
+
+
+		</main>
+
+		<footer>
+			
+			<div id = "first_astro"></div>
+			<div id = "lamp"></div>
+			<div id = "second_astro"></div>
+			<div id = "pc"></div>
+
+		</footer>
+
+	</body>
+
+</html>
