@@ -3,8 +3,8 @@ HTML markup is adaptive for devices with a small screen.
 Animations are regulated using css keyframes and js scripts.
 
 File Guide:
-1. html.html                  main webpage
-2. main_style.css                 main css ctyles
+1. html.html                        main webpage
+2. main_style.css                       main css ctyles
 3. mobile_version+animations.css      css file with media queries and keyframes rules
 4. networks.html                  auxiliary window with social networks links
 5. partners.html                  auxiliary window with partner companies links
