@@ -12,6 +12,6 @@ File Guide:
 
 Scripts Folder:
 1. forms_position.js				        script for resizing site form
-2. links.js					  script for opening and positioning links window
+2. links.js					    script for opening and positioning links window
 3. text_content.js					script for inserting text content on a page
 4. windows_scripts.js				script with pop-up window positioning and setting animation, background replacement
