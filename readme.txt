@@ -2,7 +2,7 @@ Example of simple online content webpage, implemented in HTML, CSS and Php.
 HTML markup is adaptive for devices with a small screen. 
 Animations are regulated using css keyframes and js scripts.
 
-File Guide:
+Files Guide:
 1. html.html                          main webpage
 2. main_style.css                     main css ctyles
 3. mobile_version+animations.css      css file with media queries and keyframes rules
