@@ -8,7 +8,7 @@ File Guide:
 3. mobile_version+animations.css	                css file with media queries and keyframes rules
 4. networks.html					auxiliary window with social networks links
 5. partners.html					auxiliary window with partner companies links
-6. forms+windows.css				       css file for forms and windows on site
+6. forms+windows.css				        css file for forms and windows on site
 
 Scripts Folder:
 1. forms_position.js				script for resizing site form
